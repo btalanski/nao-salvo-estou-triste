@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Não Salvo - twitch.tv/cidcidoso</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <div class="b-pink p-6 flex justify-between content-center">
+      <h1 class="font-bold text-white uppercase text-xl">Não Salvo</h1>
+      <div class="flex items-center justify-between w-32">
+        <a href="https://twitch.tv/cidcidoso" target="_blank"
+          ><img
+            src="./img/twitch-ico.svg"
+            alt="Twitch.tv/CidCidoso"
+            class="w-5"
+        /></a>
+        <a href="https://twitter.com/naosalvo" target="_blank"
+          ><img
+            src="./img/twitter-ico.svg"
+            alt="Não Salvo no Twitter"
+            class="w-5"
+        /></a>
+        <a href="https://www.instagram.com/naosalvo/" target="_blank"
+          ><img
+            src="./img/instagram-ico.svg"
+            alt="Não Salvo no Instagram"
+            class="w-5"
+        /></a>
+        <a href="https://discord.com/invite/cidcidoso" target="_blank"
+          ><img
+            src="./img/discord-ico.svg"
+            alt="Cid Cidoso no Discord"
+            class="w-5"
+        /></a>
+      </div>
+    </div>
+    <div class="b-blue grow flex items-center justify-center">
+      <div class="w-4/5 lg:w-3/5 rounded-md overflow-hidden">
+        <div class="aspect-w-16 aspect-h-9">
+          <div class="w-full h-full noise-wrapper" id="noise">
+            <div class="noise"></div>
+          </div>
+
+          <div id="player" class="hidden"></div>
+          <button
+            class="border rounded-md font-bold bg-slate-500 hover:bg-slate-600 text-slate-100 z-20 h-14 w-48 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            id="playBtn"
+          >
+            Cid, estou triste...
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="b-pink h-6"></div>
+    <template id="template">
+      <iframe
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        class="w-full h-full"
+      ></iframe>
+    </template>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
