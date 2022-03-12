@@ -4,9 +4,7 @@ let player;
 let playerLoaded = false;
 let playerDone = false;
 
-
 const playBtn = document.getElementById('playBtn');
-const playerElement = document.getElementById('player');
 const noiseContainer = document.getElementById('noise');
 
 // Por hora penas armazena a url do vídeo, podemos adicionar uma variável
@@ -27,7 +25,6 @@ function pickVideo() {
 function onPlayerReady(event) {
     playerLoaded = true;
     noiseContainer.classList.add('hidden');
-    playerElement.classList.remove('hidden');
     playBtn.classList.add('hidden');
 
     event.target.playVideo();
